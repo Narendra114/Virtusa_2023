@@ -1,0 +1,10 @@
+body {
+  font-family: Helvetica, serif;
+  font-size: 25px;
+  color: green;
+}
+
+#container {
+  width: 720px;
+  border: 5px torquise double;
+}
