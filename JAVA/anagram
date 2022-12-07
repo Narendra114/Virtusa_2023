@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    try(Scanner scan=new Scanner(System.in)){
+	     String s1,s2;
+	     s1=scan.nextLine();
+	     s2=scan.nextLine();
+	     int sum=0;
+	     for(int i=0;i<s1.length();i++)
+	     {
+	         if(s1.charAt(i)!=-1)
+	         {
+	         for(int j=0;j<s2.length();j++)
+	         {
+	            if(s2.charAt(j)!=-1)
+	            {
+	                if(s1.charAt(i)==s2.charAt(j))
+	                {
+	                    sum++;
+	                    break;
+	                }
+	            }
+	         }
+	         }
+	     }
+	     if(sum==s1.length())
+	     {
+	         System.out.print("YES can be formed");
+	     }
+	     else{
+	         System.out.print("NO can't be formed");
+	     }
+	     
+	         
+	     
+	    }
+	}
+}
